@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PolyForge - Offline Code Studio</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="main.js" type="module" defer></script>
+</head>
+<body class="bg-zinc-950 text-white">
+  <div class="flex flex-col h-screen">
+    <header class="bg-zinc-900 border-b border-zinc-700 p-4 flex items-center justify-between">
+      <h1 class="text-2xl font-bold text-cyan-400">PolyForge</h1>
+      <div class="flex gap-3">
+        <button onclick="runJS()" class="px-4 py-2 bg-green-600 hover:bg-green-500 rounded-lg">Run JS</button>
+        <button onclick="runPython()" class="px-4 py-2 bg-blue-600 hover:bg-blue-500 rounded-lg">Run Python</button>
+        <button onclick="callRust()" class="px-4 py-2 bg-purple-600 hover:bg-purple-500 rounded-lg">Call Rust</button>
+      </div>
+    </header>
+    
+    <div id="editor" class="flex-1 border border-zinc-700"></div>
+    
+    <div id="output" class="h-64 bg-black border-t border-zinc-700 p-4 font-mono text-sm overflow-auto"></div>
+  </div>
+</body>
+</html>
