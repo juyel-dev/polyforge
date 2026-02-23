@@ -1,0 +1,11 @@
+{
+  "name": "PolyForge Offline Code Studio",
+  "short_name": "PolyForge",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#18181b",
+  "theme_color": "#22d3ee",
+  "icons": [
+    { "src": "https://via.placeholder.com/192x192/22d3ee/ffffff?text=PF", "sizes": "192x192", "type": "image/png" }
+  ]
+}
