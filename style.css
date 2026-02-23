@@ -1,0 +1,3 @@
+body { margin: 0; font-family: system-ui; }
+#editor { width: 100%; }
+.output { color: #22c55e; }
